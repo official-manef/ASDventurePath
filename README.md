@@ -180,3 +180,35 @@ AI-powered web platform to assist parents in tracking and improving the developm
 ## 📫 Contact
 - Project Manager: [rahmanef63@gmail.com]
 - Technical Lead: [rahmanef63@gmail.com]
+
+---
+
+## Catatan pemeliharaan (17 Oktober 2026)
+
+This repository is a fork of [rahmanef63/ASDventurePath](https://github.com/rahmanef63/ASDventurePath). Preserve applicable upstream license terms and notices when changing or redistributing the project.
+
+### Run locally
+
+The repository includes a `package-lock.json` and these npm scripts:
+
+```sh
+npm ci
+npm run dev
+```
+
+Open the local URL printed by Next.js. To run the production server, first build and then start it:
+
+```sh
+npm run build
+npm start
+```
+
+`npm run lint` invokes the configured lint script. These commands are documented from `package.json`; they have not been verified here.
+
+### Current code map and scope
+
+- `app/` contains the Next.js routes, including the home page, `/dashboard`, `/progress`, `/community`, `/reports`, `/resources`, and `/studio`.
+- `components/pages/` contains page components for progress, community, reports, resources, and dashboard-related views.
+- `sanity/` and the Sanity configuration files provide the project’s content-studio setup.
+- The dashboard route currently renders a heading and placeholder comments; dashboard components elsewhere in the repository do not mean that route is fully wired up.
+- The README’s listed backend, AI, compliance, and deployment plans are not evidence that those systems are implemented. The repository scripts declare no test command, and no test results are reported here.
